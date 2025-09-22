@@ -1,0 +1,70 @@
+.shoppingCart {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+
+  /* Gradient واضح */
+  background: linear-gradient(to right, #eda839,#c39449, #5a86b1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+ text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* ظل خفيف للتمييز */
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.emptycard {
+    width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  margin: 100px auto; /* يوسّط الكارت أفقيًا ويعطي مسافة من فوق */
+  border-radius: 15px;
+ 
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  padding-top: 20px;
+}
+
+.cartButton {
+ background: #3e5879;  /* أزرق غامق متناسق مع الهيدر */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cartButton:hover {
+   background: #5a86b1;  
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.numbers{
+  color: #DDA853;
+  font-weight: bold;
+}
+
+.cardProduct {
+  margin: 40px;
+  padding: 30px;
+}

@@ -1,0 +1,11 @@
+body,#root {
+  background-color: #213555;
+  color: #F4EEE0;
+  overflow-x: hidden;
+   min-height: 100vh;   /* يضمن إن الخلفية تغطي الشاشة كلها */
+}
+
+.card {
+  padding: 2em;
+}
+

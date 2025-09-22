@@ -5,7 +5,7 @@
 }
 
 .cardProduct {
-   background: #613f0a; /* بني داكن مودرن */
+   background: #5c4d42; /* بني داكن مودرن */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   padding: 20px;
@@ -16,7 +16,7 @@
 .cardProduct:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-  background: #5c4d42; /* هايبرايت على الخلفية */
+  background: #613f0a; /* هايبرايت على الخلفية */
 }
 
 .cardProduct img {

@@ -19,7 +19,7 @@ const Home = () => {
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
             <img 
-              src="src\Pages\photo.avif" 
+              src="https://plus.unsplash.com/premium_photo-1673977133409-b5c2ff90c9b6?q=80&w=2691&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               alt="shopping"
               className="img-fluid rounded shadow" 
               width={450} 

@@ -5,31 +5,30 @@ import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineArrowUp } from "react-icons/ai";
-
 import '../Pages/Basis.css'
 import { useCart, useProducts } from './JS-Files/Hooks';
 const Basis = () => {
   const { totalCountV } = useCart();
-  const { searchProducts, searchTerm, filterByCategory, avalibleCategory } = useProducts();
+  const { searchProducts, searchTerm, filterByCategory, avalibleCategory, resetFilters } = useProducts();
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdown, setIsDropdown] = useState(false);
   const [isIconSeach, setisIconSeach] = useState(false);
   const [navbarSearchTerm, setNavbarSearchTerm] = useState(
-      localStorage.getItem('navbarSearchTerm') || ''
-  );
+    '');
   const navigate = useNavigate();
 
-  // 
-  useEffect(() => {
-  localStorage.setItem('navbarSearchTerm', navbarSearchTerm);
-}, [navbarSearchTerm]);
+  const handelcategory = ( cat) => {
+    resetFilters()
+    filterByCategory(cat);
+    navigate("/Product");
+
+  }
 
   const handleNavbarSearch = (e) => {
     e.preventDefault();
     if (navbarSearchTerm.trim()) {
-      e
       searchProducts(navbarSearchTerm);
-       navigate(`/Product`)
+      navigate("/Product");
     }
   }
 
@@ -138,8 +137,7 @@ const Basis = () => {
                     <button
                       className="linkSideBar"
                       onClick={() => {
-                        filterByCategory(cat);
-                        navigate("/Product");
+                        handelcategory(cat);
                         setIsOpen(false);
                       }}
                     >

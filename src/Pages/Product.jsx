@@ -48,16 +48,17 @@ const Product = () => {
   }, [filterByCategory]);
   return (
     <>
+       <h2 className="ourproduct">Our Product</h2>
       <div className="page-container">
 
-        <div className="CardsProduct container text-center">
+        <div className="CardsProduct container text-center ">
 
-          <div className="row align-items-start">
+          <div className="row align-items-stretch ">
 
             {filteredProducts.length > 0 ? (
               filteredProducts.map((value, index) => (
                 <div className="col" key={index}>
-                  <div className="cardProduct" style={{ width: '18rem' }}>
+                  <div className="cardProduct d-flex flex-column" style={{ width: '18rem' }}>
                     <img src={value.image} className="card-img-top" width={200} height={200} alt={value.description} />
                     <div className="card-body">
                       <h5 className="cardtitle fw-bloder ">{value.title}</h5>
